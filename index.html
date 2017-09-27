@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>SignUp</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">		
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+</head>
+<body>
+	<div class="title">	
+		<h1>THE CODE REVIEW</h1>
+	</div>
+	<div class="subtitle">
+		<p class="title-font">Signup for our newsletter</p>
+		<p class="label-font">Get the latest news on how your code is doing right in your inbox</p>
+	</div>
+	<main>
+		<form>
+			<fieldset class="first">
+				<legend class="title-font">Contact Information</legend>
+				<!-- name -->
+				<label class="label-font" for="fullname">Full Name</label>
+				<input class="input-format" type="text" id="fullname" name="user_name" placeholder="Required">
+				<!-- email -->
+				<label class="label-font" for="email">Email Address</label>
+				<input class="input-format" type="email" id="email" name="user_email" placeholder="Required">
+				<!-- phone number -->
+				<label class="label-font" for="phone">Phone Number</label>
+				<input class="input-format" type="number" id="phone" name="user_phone">
+				<!-- address -->
+				<label class="label-font" for="address">Street Address</label>
+				<input class="input-format" type="text" id="address" name="user_address">
+				<!-- city -->
+				<label class="label-font" for="city">City</label>
+				<input class="input-format" type="text" id="city" name="user_city">
+				<!-- state -->
+				<label class="label-font" for="state">State</label>
+				<select  name="user_state" id="state">
+					<option value="defaut" selected disabled="disabled">Choose State</option>
+					<option value="nsw">NSW</option>
+					<option value="act">ACT</option>
+					<option value="sa">SA</option>
+					<option value="nt">NT</option>
+				</select>
+				<!-- Zip -->
+				<label class="label-font" for="zip">Zip Code</label>
+				<input class="input-format" type="text" id="zip" name="user_zip">
+			</fieldset>
+			<fieldset class="second">
+				<legend class="title-font">Newsletter</legend>
+				<!-- title -->
+				<label class="label-font">Select the newsletters you would like to recieve</label><br>
+				<!-- html -->
+				<input type="checkbox" name="recieve_html" id="html" value="recieve_html"><label class="check label-font" for="html">HTML News</label><br>
+				<!-- css -->
+				<input type="checkbox" name="recieve_css" id="css" value="recieve_css"><label class="check label-font" for="css">CSS News</label><br>
+				<!-- javascript -->
+				<input type="checkbox" name="recieve_javascript" id="javascript" value="recieve_javascript"><label class="check label-font" for="javascript">Javascript News</label><br>
+				<!-- title -->
+				<label class="label-font">Newsletter format</label><br>
+				<!-- radio -->
+				<input type="radio" id="radio_html" name="radio_format" value="radio_html"><label class="check label-font" for="radio_html">HTML</label><br>
+				<input type="radio" id="radio_text" name="radio_format" value="radio_text"><label class="check label-font" for="radio_text">Plain text</label><br>
+				<label class="label-font">Other topics you'd like to hear about</label><br>
+				<textarea name="user_text" id="text"  rows="4"></textarea>
+			</fieldset>
+			<button type="submit" value="Submit">Sign Up</button>
+		</form>
+		<div class="bottom">Copyright The Code Review</div>
+	</main>	
+	
+</body>
+</html>
